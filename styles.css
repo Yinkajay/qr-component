@@ -1,63 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --light-gray: hsl(212,45%,89%);
-  --gray-blue: hsl(220,15%,55%);
-  --dark-blue: hsl(218,44%,22%);
+  --light-gray: hsl(212, 45%, 89%);
+  --gray-blue: hsl(220, 15%, 55%);
+  --dark-blue: hsl(218, 44%, 22%);
 
 
 }
 
 /* Body Styles */
-body{
-background-color: var(--light-gray);
-font-family: 'Outfit', sans-serif;
-display: flex;
-height: 100vh;
-justify-content: center;
-align-items: center;
+body {
+  background-color: var(--light-gray);
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  /* margin: 100px; */
 }
 
-p{
+p {
   font-size: 15px;
 }
 
 
 /* Component Card Styles */
-.card{
+.card {
   background-color: white;
-  width: 21vw;
-  height: 65vh;
+  width: 310px;
+  height: 520px;
   border-radius: 20px;
   padding: 15px;
-  /* margin: auto auto;  */
+  /* margin: 50px 0; */
 }
 
 /* QR Code Styles */
-.qr-code{
-  height: 65%;
+.qr-code {
+  height: 320px;
   background-image: url(images/image-qr-code.png);
-  background-size: contain;
-  background-color: black;
+  background-position: center;
+  background-size: cover; 
   border-radius: 15px;
 }
 
-/* QR Info Styles */
-.qr-info{
-  text-align: center;
-} 
 
-.qr-info h3{
-margin: 20px 20px 20px 20px;
-font-size: 22px;
+/* QR Info Styles */
+.qr-info {
+  height: 160px;
+  text-align: center;
+  /* background-color: yellowgreen; */
 }
 
-.qr-info p{
-color: var(--gray-blue);
-padding: 0 20px;
+.qr-info h3 {
+
+  margin: 5%;
+  font-size: 1.3rem;
+}
+
+.qr-info p {
+  /* background-color: purple; */
+  color: var(--gray-blue);
+  margin: 5%;
 }
 
 
@@ -65,5 +71,26 @@ padding: 0 20px;
 
 
 /* Attribution */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+/* @media (min-width: 375px) and (max-width: 1024px) {
+  body {
+    background-color: brown;
+  }
+
+  .card {
+    background-color: green;
+    height: 65%;
+    max-height: max-content;
+    border-radius: 20px;
+    padding: 1%;
+  } */
+/* } */
